@@ -114,7 +114,7 @@ const CitasMedicas = () => {
     const confirmDelete = window.confirm('¿Estás seguro de que deseas eliminar esta cita?');
     if (confirmDelete) {
       try {
-        await axios.delete('http://localhost:5001/api/citas/${id}');
+        await axios.delete(`http://localhost:5001/api/citas/${id}`);
         setCitas(citas.filter(cita => cita.id !== id));
       } catch (error) {
         console.error('Error al eliminar la cita:', error);

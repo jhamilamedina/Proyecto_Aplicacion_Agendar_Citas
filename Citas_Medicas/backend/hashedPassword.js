@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-const Usuario = require('./models/models_usuarios'); // Asegúrate de que la ruta sea correcta
+const Usuario = require('./models/models_usuarios');
 
 async function actualizarContraseña() {
     const saltRounds = 10;
