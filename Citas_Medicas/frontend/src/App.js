@@ -19,6 +19,8 @@ const App = () => {
             <div className="App">
                 <UserProfile /> 
 
+
+                // RUTAS DECLARADAS
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path="/dashboard" element={<Dashboard />} />
